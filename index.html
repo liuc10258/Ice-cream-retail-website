@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Cavallo</title>
+</head>
+
+<body>
+
+<!--========== SCROLL TOPdone ==========-->
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop__icon'></i>
+</a>
+
+<!--========== HEADER Done ==========-->
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo"><img src="https://i.ibb.co/jfWNDDq/logo-jpeg.png"></a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">Selection</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Sizes</a></li>
+                <li class="nav__item"><a href="#menu" class="nav__link">Order</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Details</a></li>
+                <li class="nav__item"><a href="#account" class="nav__link">Sign in / Register</a></li>
+
+                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+    <!--========== HOME ==========-->
+    <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+            <div class="home__data">
+                <h1 class="home__title">Tasty <br>
+                    Ice-cream</h1>
+                <h2 class="home__subtitle">Try the ice-cream best in town!</h2>
+                <a href="#about" class="button">View Selection</a>
+                <a href="#menu" class="button">Order</a>
+            </div>
+
+            <img src="https://i.ibb.co/GtJNG2X/cavallo-s4.png" alt="" class="home__img">
+        </div>
+    </section>
+
+    <!--========== ABOUT Add google maps Api ==========-->
+    <section class="selection__container section bds-container" id="about">
+        <span class="section-subtitle">Special</span>
+        <h2 class="section-title">Selection</h2>
+
+        <div class="selection__container bds-grid">
+            <div class="selection__content" id="coco">
+                <img src="https://i.ibb.co/hfgzJ4w/chocolate.png" alt="" class="selection__img">
+            </div>
+
+            <div class="selection__content" id="cara">
+                <img src="https://i.ibb.co/CHsgYYs/salted-caramel.png" alt="" class="selection__img">
+            </div>
+
+            <div class="selection__content" id="honey">
+                <img src="https://i.ibb.co/hVsfyTY/honeycomb.png" alt="" class="selection__img">
+            </div>
+
+            <div class="selection__content" id="rum">
+                <img src="https://i.ibb.co/nMR9qh0/rumnraisin.png" alt="" class="selection__img">
+            </div>
+
+
+            <div class="selection__content" id="vanilla">
+                <img src="https://i.ibb.co/gWt8cWt/vanilla.png" alt="" class="selection__img">
+            </div>
+
+
+            <div class="selection__content" id="straw">
+                <img src="https://i.ibb.co/qktjdQ5/strawberry.png" alt="" class="selection__img">
+            </div>
+
+            <div class="selection__content" id="mint">
+                <img src="https://i.ibb.co/KjDvxPf/mint.png" alt="" class="selection__img">
+            </div>
+
+            <div class="selection__content" id="cherry">
+                <img src="https://i.ibb.co/XJ2Vv9P/cherry.png" alt="" class="selection__img">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--========== SERVICES ==========-->
+    <!--======= To be edited =========----->
+
+    <section class="services section bd-container" id="services">
+        <span class="section-subtitle">Offering Various</span>
+        <h2 class="section-title">Sizes</h2>
+
+        <div class="services__container  bd-grid">
+            <div class="services__content">
+                <img src="https://i.ibb.co/s2DPS7r/cavallo-s1.png" class="size__img">
+                <h3 class="services__title">Small</h3>
+                <p class="services__description">Price: £1.75</p>
+            </div>
+
+            <div class="services__content">
+                <img src="https://i.ibb.co/rMxcYCN/cavallo-s2.png" class="size__img">
+                <h3 class="services__title">Medium</h3>
+                <p class="services__description">Price: £2.25</p>
+            </div>
+
+            <div class="services__content">
+                <img src="https://i.ibb.co/1nm47R8/cavallo-s3.png" class="size__img">
+                <h3 class="services__title">Large</h3>
+                <p class="services__description">Price: £2.75</p>
+            </div>
+
+            <div class="services__content">
+                <img src="https://i.ibb.co/GtJNG2X/cavallo-s4.png" class="size__img">
+                <h3 class="services__title">Extra Large</h3>
+                <p class="services__description">Price: £3.50</p>
+            </div>
+
+            <div class="services__content">
+                <img src="https://i.ibb.co/gVgNFPL/cavallo-s5.png" class="size__imgl">
+                <h3 class="services__title">Extra Extra Large</h3>
+                <p class="services__description">Price: £5.75</p>
+            </div>
+
+            <div class="services__content">
+                <img src="https://i.pinimg.com/originals/dd/88/4e/dd884e1419f1fde46e7edd4457566776.png"
+                     class="size__imgi">
+                <h3 class="services__title">Coming Soon!</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!--========== ORDER MODAL ==========-->
+    <section class="order section bd-container" id="order">
+        <div class="order__content">
+            <img src="https://i.ibb.co/jfWNDDq/logo-jpeg.png" class="order_logo">
+            <div id="order__total"></div>
+            <form>
+                <input type="text" placeholder="Name" class="order__input">
+                <input type="text" placeholder="Surname" class="order__input">
+                <input type="text" placeholder="Address" class="order__input" id="address">
+                <div id="map"></div>
+
+            </form>
+            <a href="#menu" class="payment" id="cancel">Cancel</a>
+            <br>
+            <br>
+            <br>
+            <a href="#order" class="payment" id="pay">Proceed to Payment</a>
+        </div>
+    </section>
+
+    <!--========== MENU ==========-->
+    <!---====To Edit===--->
+    <section class="menu section bd-container" id="menu">
+        <div class="menu">
+        <span class="section-subtitle">Special</span>
+        <h2 class="section-title">Menu</h2>
+
+        <div class="menu__container bd-grid">
+            <div class="menu__content">
+                <img src="https://i.ibb.co/hfgzJ4w/chocolate.png" alt="" class="menu__img">
+                <h3 class="menu__name">Chocolate</h3>
+                <span class="menu__detail">Taste The Chocolate Paradise</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="coco_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="coco_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_coco"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/KjDvxPf/mint.png" alt="" class="menu__img">
+                <h3 class="menu__name">Mint</h3>
+                <span class="menu__detail">Minty Fresh</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="mint_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="mint_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_mint"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/hVsfyTY/honeycomb.png" alt="" class="menu__img">
+                <h3 class="menu__name">Honeycomb</h3>
+                <span class="menu__detail">Straight from the Nest</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="honey_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="honey_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_honey"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/nMR9qh0/rumnraisin.png" alt="" class="menu__img">
+                <h3 class="menu__name">Rum and Raisin</h3>
+                <span class="menu__detail">Lets get Litty Ice Cream</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="rum_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="rum_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_rum"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/gWt8cWt/vanilla.png" alt="" class="menu__img">
+                <h3 class="menu__name">Good ol' Vanilla</h3>
+                <span class="menu__detail">Nothing beats the Basics</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="vanilla_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <select name="dairy" id="dairy">
+                                <option value="normal">Normal</option>
+                                <option value="vegan">Dairy Free</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="vanilla_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_vanilla"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/qktjdQ5/strawberry.png" alt="" class="menu__img">
+                <h3 class="menu__name">Strawberry </h3>
+                <span class="menu__detail">Is it Love, or is it Strawberry</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="straw_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="straw_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_straw"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/3hrkLwb/cherry.png" alt="" class="menu__img">
+                <h3 class="menu__name">Cherry </h3>
+                <span class="menu__detail">Sweet Summer Taste</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="cherry_size">
+                                <option value="1.75">Small</option>
+                                <option value="2.25">Medium</option>
+                                <option value="2.75">Large</option>
+                                <option value="3.50">XLarge</option>
+                                <option value="5.75">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="cherry_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_cherry"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+            <div class="menu__content">
+                <img src="https://i.ibb.co/CHsgYYs/salted-caramel.png" alt="" class="menu__img">
+                <h3 class="menu__name">Salted Caramel</h3>
+                <span class="menu__detail">Salty and Sweet, Quite the Treat (0.75 surcharge)</span>
+                <span class="menu__preci">
+                        <form class="dropdown">
+                            <select name="tub" class="tub" id="cara_size">
+                                <option value="2.50">Small</option>
+                                <option value="3.00">Medium</option>
+                                <option value="3.50">Large</option>
+                                <option value="4.25">XLarge</option>
+                                <option value="6.50">XXLarge</option>
+                            </select>
+                            <input type="number" class="qty" name="Quantity" min="0" max="10" placeholder="Quantity" id="cara_qty">
+                        </form>
+
+                    </span>
+                <a href="#menu" class="button menu__button" id="add_cara"><i class='bx bx-cart-alt'></i></a>
+            </div>
+
+
+        </div>
+
+            <h2 class="section-title" id="basket">Basket</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div id="basket__total"></div>
+            <br>
+            <br>
+            <br>
+        <a href="#order" class="accbutton section-subtitle" id="order__button">Order</a>
+        </div>
+    </section>
+
+
+    <!--========== CONTACT US ==========-->
+    <!---To be edited =======---->
+    <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+            <div class="contact__data">
+                <span class="section-subtitle contact__initial">Come Visit</span>
+                <h2 class="section-title contact__initial">Details</h2>
+                <p class="contact__description">Our Shop is located in Seaton Delaval, Northumberland.</p>
+                <p class="contact__description">We are open 7 days a week from 11am to 6pm!</p>
+                <p class="contact__description">Full Address:<br>Avenue Cres, Seaton Delaval, Whitley Bay NE25 0DN</p>
+            </div>
+
+            <div class="contact__button">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2284.249712571366!2d-1.5272421483984393!3d55.07387815151806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e727a740811c7%3A0xa99b0eca1ea7fcb4!2sAvenue%20Cres%2C%20Seaton%20Delaval%2C%20Whitley%20Bay%20NE25%200DN!5e0!3m2!1sen!2suk!4v1612813792601!5m2!1sen!2suk"
+                        width="450" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--========== ACCOUNT ==========-->
+    <!---====To Edit===--->
+    <section class="menu section bd-container" id="account">
+        <span class="section-subtitle">Join us</span>
+        <h2 class="section-title">Sign in / Register</h2>
+        <div class="sign__data">
+            <a href="#account" class="accbutton" id="sign">Sign in</a>
+            <a href="#account" class="accbutton" id="reg">Register</a>
+        </div>
+
+    </section>
+
+    <div class="bg-modal">
+        <div class="modal-content">
+            <img src="https://i.ibb.co/jfWNDDq/logo-jpeg.png" class="popup_logo">
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+            </form>
+            <div class="close" id="close">+</div>
+            <a href="#" class="submit" id="submit">Submit</a>
+        </div>
+
+    </div>
+
+    <div class="rg-modal">
+        <div class="modal-content">
+            <img src="https://i.ibb.co/jfWNDDq/logo-jpeg.png" class="popup_logo">
+            <form>
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+            </form>
+            <div class="close" id="shut">+</div>
+            <a href="#" class="submit" id="enter">Submit</a>
+        </div>
+
+    </div>
+
+</main>
+
+<!--========== FOOTER ==========-->
+<footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+
+        <div class="footer__content">
+            <img src="https://i.ibb.co/XkHYS2M/cavallo-all-sizes.png" class="img_size">
+        </div>
+    </div>
+</footer>
+
+<!--========== SCROLL REVEAL ==========-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--========== MAIN JS ==========-->
+<script src="assets/js/main.js"></script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALJT6zZhAHUjezm1lQp3GmF4G61Kgqaq8&callback=initMap">
+</script>
+
+</body>
+
+</html>
